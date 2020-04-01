@@ -1,40 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Description" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+<body>
+  <main>
+    <section class="about">
+      <img class="about__picture" src="assets/img/avatar.png" alt="black and white photo of Gosia.">
+      <h1 class="about__header">Hey there! 👋 My name is Gosia and I’m an aspiring Frontend developer and a keen board
+        games fan.</h1>
+      <p class="about__paragraph">You might be interested in checking the list of my skills. Don’t forget to have a
+        glimpse at my projects. Currently I’m looking for a new challenges so if you have one - contact me 😊</p>
+      <span class="about__span">silkowska.m@gmail.com</span>
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+    </section>
+    <section class="skills">
+      <h2 class="skills__header">My skills</h2>
+      <h3 class="skills__title">Working knowledge
+      </h3>
+      <ul class="skills_list">
+        <li class="skills_item">Semantic HTML5</li>
+        <li class="skills_item">CSS Grid</li>
+        <li class="skills_item">Flexbox</li>
+        <li class="skills_item">Forms</li>
+        <li class="skills_item">Markdown</li>
+        <li class="skills_item">JS: DOM Manipulations</li>
+        <li class="skills_item">JS: Local storage</li>
+        <li class="skills_item">SASS</li>
+        <li class="skills_item">Figma</li>
+      </ul>
+      <h3 class="skills__title">Know something about
+      </h3>
+      <ul class="skills_list">
+        <li class="skills_item">JavaScript ES6 + features</li>
+        <li class="skills_item">Progressive web apps</li>
+        <li class="skills_item">CSS animations</li>
+        <li class="skills_item">Git</li>
+        <li class="skills_item">Working with API</li>
+        <li class="skills_item">Accessibility</li>
+        <li class="skills_item">NPM Scripts</li>
+      </ul>
+      <h3 class="skills__title">Want to learn
+      </h3>
+      <ul class="skills_list">
+        <li class="skills_item">React JS</li>
+        <li class="skills_item">Typescript</li>
+        <li class="skills_item">Node JS</li>
+        <li class="skills_item">Gatsby</li>
+        <li class="skills_item">Electron</li>
+        <li class="skills_item">Websockets</li>
+        <li class="skills_item">Server side rendering</li>
+      </ul>
+    </section>
+    <section class="projects">
+      <h2 class="projects__header">Recent projects</h2>
+      <p class="projects__paragraph">I started my frontend developer path in 2018. Since then, I’ve built some projects.
+        Here’s the list of the things I’ve done so far.</p>
+      <article class="projects__item">
+        <h4 class="projects__title"></h4>
+        <p class="projects__paragraph"></p>
+        <a class="projects__link">Demo</a>
+        <a class="projects__link">Github</a>
+      </article>
+    </section>
+    <section class="contact">
+      <h3 class="contact__title">Contact me</h3>
+    </section>
+    <p class="contact__paragraph">I’m open for new opportunities. If you have one for me we should talk!</p>
+    <a class="contact__icon" href="#" target=blank><img class="contact__image" src="assets/img/fb_icon.svg"
+        alt="Vector icon - link to Facebook."></a>
+    <a class="contact__icon" href="#" target=blank><img class="contact__image" src="assets/img/github_icon.svg"
+        alt="Vector icon - link to Github."></a>
+    <a class="contact__icon" href="#" target=blank><img class="contact__image" src="assets/img/instagram_icon.svg"
+        alt="Vector icon - link to Instagram."></a>
+    <span class="contact__span">silkowska.m@gmail.com</span>
+  </main>
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+  <script src="js/main.js"></script>
+</body>
 
-    <script src="js/main.js"></script>
-  </body>
 </html>
