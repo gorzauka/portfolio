@@ -1,2 +1,16 @@
 $lightgray: #e3e6ea;
+$transparentgray: rgba(203, 210, 217, 0.5);
+$darkgray: #52606D;
 $deepnavy: #171F3F;
+$deepblue: #0593FB;
+$vividgreen: #06C847;
+$deeppurple: #653CAD;
+$vividblue: #2251CC;
+
+@mixin top-border{
+    content: "";
+    position: absolute;
+    left:0;
+    top:-24px;
+    width: 80px;
+}

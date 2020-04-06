@@ -14,9 +14,16 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// place your code below
+const reposList = document.querySelector(".projects__list--js");
 
+fetch("https://api.github.com/users/gorzauka/repos?sort=updated")
+.then(resp => resp.json())
+.then(resp => {
+const repos = resp;
+for (const repo of repos){
+  reposList.innerHTML += `<li><a class="projects__item" href='${repo.html_url}'>${repo.name}</li>`;
+}
+})
 
-console.log(`Hello world!`);
 
 
