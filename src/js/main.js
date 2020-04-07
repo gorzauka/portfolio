@@ -21,7 +21,7 @@ fetch("https://api.github.com/users/gorzauka/repos?sort=updated")
 .then(resp => {
 const repos = resp;
 for (const repo of repos){
-  reposList.innerHTML += `<li><a class="projects__item" href='${repo.html_url}'>${repo.name}</li>`;
+  reposList.innerHTML += `<li class="projects__item"><a class="projects__link" href='${repo.html_url}'>${repo.name}</li>`;
 }
 })
 
