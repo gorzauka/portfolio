@@ -15,6 +15,7 @@ body {
   color: $deepnavy;
   background: #fff;
   font-family: Poppins;
+  border: 16px solid $deepnavy;
 }
 
 .about {
@@ -22,7 +23,6 @@ body {
   left: 128px;
   top: 128px;
   margin: 128px 0 128px 128px;
-
   &__header {
     font-weight: 600;
     font-size: 40px;
@@ -40,20 +40,25 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
+    position: relative;
     &--footer {
-      display: block;
+      display: inline-block;
       padding-top: 48px;
+      text-decoration: none;
+      border-bottom: 2px solid $deepblue;
+      padding-bottom: 8px;
     }
   }
 }
 
 .skills {
   &__header {
-    display: inline-block;
+    display: block;
     margin-left: 128px;
     font-size: 36px;
     line-height: 48px;
     position: relative;
+    margin-right: 128px;
     &::after {
       border-bottom: 2px solid $transparentgray;
       content: "";
@@ -111,6 +116,7 @@ body {
 
 .projects {
   background: $lightgray;
+  height: 100%;
   &__header {
     font-size: 36px;
     line-height: 48px;
@@ -183,11 +189,28 @@ body {
   &__title {
     font-size: 32px;
     line-height: 44px;
+    position: relative;
+    &::after {
+      border: 2px solid $deepblue;
+      position: absolute;
+      content: "";
+      top: -24px;
+      left: 0;
+      width: 80px;
+      border-radius: 8px;
+    }
+  }
+  &__paragraph {
+    max-width: 580px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
   }
 }
-&__paragraph {
-  max-width: 580px;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 36px;
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 144px;
 }
