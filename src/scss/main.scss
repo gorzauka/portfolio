@@ -43,7 +43,6 @@ body {
     position: relative;
     &--footer {
       display: inline-block;
-      padding-top: 48px;
       text-decoration: none;
       border-bottom: 2px solid $deepblue;
       padding-bottom: 8px;
@@ -133,10 +132,11 @@ body {
   &__list {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(222px, 300px);
     grid-gap: 24px;
     padding: 64px 128px 128px;
+    justify-content: space-between;
   }
   &__item {
     text-decoration: none;
@@ -213,4 +213,154 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 144px;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    border: none;
+  }
+  .about {
+    max-width: 600px;
+    margin: 64px 16px 120px 16px;
+    &__header {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 36px;
+    }
+    &__paragraph {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 26px;
+      padding-bottom: 34px;
+    }
+    &__link {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+  .skills {
+    &__header {
+      text-align: center;
+      font-size: 24px;
+      line-height: 32px;
+      &::after {
+        bottom: -12px;
+      }
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    &__details {
+      grid-template-columns: 1fr;
+      margin: 62px 16px 48px 16px;
+    }
+    &__list {
+      grid-template-columns: 1fr;
+      font-size: 14px;
+      line-height: 36px;
+    }
+  }
+  .projects {
+    &__header {
+      margin: 0;
+      padding-top: 80px;
+      text-align: center;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__paragraph {
+      margin: 0 auto;
+      padding: 0 16px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 26px;
+    }
+    &__list {
+      margin: 16px;
+      padding: 0;
+      grid-gap: 16px;
+      grid-template-columns: 1fr;
+    }
+  }
+  .contact {
+    padding-left: 16px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__paragraph {
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1400px) {
+  .about {
+    max-width: 600px;
+    left: 64px;
+    top: 64px;
+    margin: 64px 0 64px 64px;
+    &__header {
+      font-size: 32px;
+      line-height: 42px;
+    }
+    &__paragraph {
+      font-size: 18px;
+      line-height: 28px;
+      padding-bottom: 40px;
+    }
+    &__link {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .skills {
+    &__header {
+      margin-left: 64px;
+      font-size: 36px;
+      line-height: 48px;
+      margin-right: 64px;
+    }
+    &__details {
+      margin: 64px;
+      grid-gap: 24px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 44px;
+    }
+    &__list {
+      grid-template-columns: 1fr;
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+
+  .projects {
+    &__header {
+      font-size: 36px;
+      line-height: 48px;
+      margin: 64px 0 0 64px;
+      padding-top: 64px;
+    }
+    &__paragraph {
+      max-width: 580px;
+      margin-left: 64px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 36px;
+    }
+    &__list {
+      padding: 32px 64px 64px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .contact {
+    padding: 64px;
+  }
 }
