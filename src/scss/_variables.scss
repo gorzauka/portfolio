@@ -15,3 +15,51 @@ $vividblue: #2251CC;
     width: 80px;
     border-radius: 8px;
 }
+
+@mixin desktop-header {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+@mixin medium-header {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+@mixin mobile-header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin desktop-title{
+    font-size: 32px;
+    line-height: 44px;
+}
+
+@mixin medium-title{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin mobile-title{
+    font-size: 22px;
+    line-height: 32px;
+}
+
+@mixin desktop-paragraph {
+    font-size: 20px;
+    line-height: 36px;   
+}
+
+@mixin medium-paragraph{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@mixin mobile-paragraph{
+    font-size: 16px;
+    line-height: 26px;
+}

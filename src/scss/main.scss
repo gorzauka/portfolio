@@ -29,9 +29,7 @@ body {
     line-height: 56px;
   }
   &__paragraph {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 36px;
+    @include desktop-paragraph;
     color: $darkgray;
     padding-bottom: 60px;
   }
@@ -53,11 +51,9 @@ body {
 .skills {
   &__header {
     display: block;
-    margin-left: 128px;
-    font-size: 36px;
-    line-height: 48px;
     position: relative;
-    margin-right: 128px;
+    margin: 0 128px;
+    @include desktop-header;
     &::after {
       border-bottom: 2px solid $transparentgray;
       content: "";
@@ -74,8 +70,7 @@ body {
     margin: 128px;
   }
   &__title {
-    font-size: 32px;
-    line-height: 44px;
+    @include desktop-title;
     position: relative;
     &--green {
       &::after {
@@ -117,17 +112,14 @@ body {
   background: $lightgray;
   height: 100%;
   &__header {
-    font-size: 36px;
-    line-height: 48px;
     margin: 128px 0 0 128px;
     padding-top: 128px;
+    @include desktop-header;
   }
   &__paragraph {
     max-width: 580px;
     margin-left: 128px;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 36px;
+    @include desktop-paragraph;
   }
   &__list {
     list-style-type: none;
@@ -170,8 +162,7 @@ body {
     left: 48px;
     top: 112px;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 36px;
+    @include desktop-paragraph;
     color: $deepnavy;
     &::after {
       content: url(/assets/img/github_icon_black.png);
@@ -187,8 +178,7 @@ body {
   color: #fff;
   padding: 128px;
   &__title {
-    font-size: 32px;
-    line-height: 44px;
+    @include desktop-title;
     position: relative;
     &::after {
       border: 2px solid $deepblue;
@@ -202,9 +192,7 @@ body {
   }
   &__paragraph {
     max-width: 580px;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 36px;
+    @include desktop-paragraph;
   }
 }
 
@@ -228,28 +216,23 @@ body {
       line-height: 36px;
     }
     &__paragraph {
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 26px;
+      @include mobile-paragraph;
       padding-bottom: 34px;
     }
     &__link {
-      font-size: 16px;
-      line-height: 26px;
+      @include mobile-paragraph;
     }
   }
   .skills {
     &__header {
       text-align: center;
-      font-size: 24px;
-      line-height: 32px;
+      @include mobile-header;
       &::after {
         bottom: -12px;
       }
     }
     &__title {
-      font-size: 22px;
-      line-height: 32px;
+      @include mbile-title;
     }
     &__details {
       grid-template-columns: 1fr;
@@ -264,17 +247,15 @@ body {
   .projects {
     &__header {
       margin: 0;
-      padding-top: 80px;
+      padding-top: 40px;
       text-align: center;
-      font-size: 24px;
-      line-height: 32px;
+      @include mobile-header;
     }
     &__paragraph {
       margin: 0 auto;
       padding: 0 16px;
       text-align: center;
-      font-size: 16px;
-      line-height: 26px;
+      @include mobile-paragraph;
     }
     &__list {
       margin: 16px;
@@ -282,17 +263,19 @@ body {
       grid-gap: 16px;
       grid-template-columns: 1fr;
     }
+    &__link {
+      @include mobile-paragraph;
+    }
   }
   .contact {
     padding-left: 16px;
+    padding-top: 40px;
 
     &__title {
-      font-size: 24px;
-      line-height: 32px;
+      @include mobile-title;
     }
     &__paragraph {
-      font-size: 14px;
-      line-height: 26px;
+      @include mobile-paragraph;
     }
   }
 }
@@ -305,45 +288,39 @@ body {
     margin: 64px 0 64px 64px;
     &__header {
       font-size: 32px;
-      line-height: 42px;
+      line-height: 44px;
     }
     &__paragraph {
-      font-size: 18px;
-      line-height: 28px;
+      @include medium-paragraph;
       padding-bottom: 40px;
     }
     &__link {
-      font-size: 18px;
-      line-height: 28px;
+      @include medium-paragraph;
     }
   }
 
   .skills {
     &__header {
-      margin-left: 64px;
-      font-size: 36px;
-      line-height: 48px;
-      margin-right: 64px;
+      margin: 0 64px;
+      @include medium-header;
     }
     &__details {
       margin: 64px;
       grid-gap: 24px;
     }
     &__title {
-      font-size: 32px;
-      line-height: 44px;
+      @include medium-title;
     }
     &__list {
       grid-template-columns: 1fr;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 40px;
     }
   }
 
   .projects {
     &__header {
-      font-size: 36px;
-      line-height: 48px;
+      @include medium-header;
       margin: 64px 0 0 64px;
       padding-top: 64px;
     }
@@ -358,9 +335,18 @@ body {
       padding: 32px 64px 64px;
       grid-template-columns: 1fr 1fr;
     }
+    &__link {
+      @include medium-paragraph;
+    }
   }
 
   .contact {
     padding: 64px;
+    &__title {
+      @include medium-title;
+    }
+    &__paragraph {
+      @include medium-paragraph;
+    }
   }
 }
