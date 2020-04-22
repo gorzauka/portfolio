@@ -14,14 +14,14 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-const reposList = document.querySelector(".projects__list--js");
+const reposList = document.querySelector(".projects-content__list--js");
 
 fetch("https://api.github.com/users/gorzauka/repos?sort=updated")
 .then(resp => resp.json())
 .then(resp => {
 const repos = resp;
 for (const repo of repos){
-  reposList.innerHTML += `<li class="projects__item"><a class="projects__link" href='${repo.html_url}'>${repo.name}</li>`;
+  reposList.innerHTML += `<li class="projects-content__item"><a class="projects-content__link" href='${repo.html_url}'>${repo.name}</li>`;
 }
 })
 

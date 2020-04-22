@@ -16,6 +16,14 @@ $vividblue: #2251CC;
     border-radius: 8px;
 }
 
+@mixin mail-link{
+    color: $deepblue;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    position: relative;
+}
+
 @mixin desktop-header {
     font-weight: 600;
     font-size: 36px;
