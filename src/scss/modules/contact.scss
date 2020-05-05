@@ -1,0 +1,51 @@
+.contact {
+  background-color: $deepnavy;
+  color: #fff;
+  padding: 8rem;
+  &__title {
+    @include desktop-title;
+    position: relative;
+    &::after {
+      border: 2px solid $deepblue;
+      position: absolute;
+      content: "";
+      top: -1.5rem;
+      left: 0;
+      width: 5rem;
+      border-radius: 8px;
+    }
+  }
+  &__paragraph {
+    max-width: 580px;
+    @include desktop-paragraph;
+  }
+  &-socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 9rem;
+    &__link{
+      @include mail-link;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 2px solid $deepblue;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 780px) {
+  .contact {
+    padding-left: 1rem;
+    padding-top: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1400px) {
+
+  .contact {
+    padding: 4rem;
+  }
+}

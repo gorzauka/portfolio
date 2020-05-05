@@ -11,63 +11,63 @@ $vividblue: #2251CC;
     content: "";
     position: absolute;
     left:0;
-    top:-24px;
-    width: 80px;
+    top:-1.5rem;
+    width: 5rem;
     border-radius: 8px;
 }
 
 @mixin mail-link{
     color: $deepblue;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 1.25rem;
+    line-height: 2rem;
     position: relative;
 }
 
 @mixin desktop-header {
     font-weight: 600;
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 2.25rem;
+    line-height: 3rem;
 }
 
 @mixin medium-header {
     font-weight: 600;
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
 }
 
 @mixin mobile-header {
     font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 @mixin desktop-title{
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 2rem;
+    line-height: 2.75rem;
 }
 
 @mixin medium-title{
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 @mixin mobile-title{
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 1.375rem;
+    line-height: 2rem;
 }
 
 @mixin desktop-paragraph {
-    font-size: 20px;
-    line-height: 36px;   
+    font-size: 1.25rem;
+    line-height: 2.25rem;   
 }
 
 @mixin medium-paragraph{
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
 }
 
 @mixin mobile-paragraph{
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1rem;
+    line-height: 1.265rem;
 }

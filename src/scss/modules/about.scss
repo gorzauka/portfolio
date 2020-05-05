@@ -1,0 +1,36 @@
+.about {
+    max-width: 781px;
+    left: 8rem;
+    top: 8rem;
+    margin: 8rem 0 8rem 8rem;
+    &__header {
+      font-weight: 600;
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
+    &__paragraph {
+      @include desktop-paragraph;
+      color: $darkgray;
+      padding-bottom: 3.75rem;
+    }
+    &__link {
+      @include mail-link;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .about {
+      max-width: 600px;
+      margin: 4rem 1rem 8rem 1rem;
+    
+    }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1400px) {
+    .about {
+      max-width: 600px;
+      left: 4rem;
+      top: 4rem;
+      margin: 4rem 0 4rem 4rem;
+    }
+  }
