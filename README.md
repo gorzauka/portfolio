@@ -10,4 +10,4 @@ My personal website built during WTF course ✌
 - CSS Grid
 - CSS Flexbox
 
-# built with wtf-gulp-starter
+### built with wtf-gulp-starter
