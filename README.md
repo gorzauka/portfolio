@@ -1,3 +1,5 @@
+![A main section from the website](src/assets/img/cover.png)
+
 # Małgorzata Siłkowska Personal Website
 
 My personal website built during WTF course ✌
