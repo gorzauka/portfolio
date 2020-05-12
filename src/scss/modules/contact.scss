@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: space-between;
     width: 9rem;
-    &__link{
+    &__link {
       @include mail-link;
       display: inline-block;
       text-decoration: none;
@@ -34,17 +34,14 @@
   }
 }
 
-
-
 @media screen and (max-width: 780px) {
   .contact {
     padding-left: 1rem;
-    padding-top: 2.5rem;
+    padding: 2.5rem;
   }
 }
 
 @media screen and (min-width: 781px) and (max-width: 1400px) {
-
   .contact {
     padding: 4rem;
   }
