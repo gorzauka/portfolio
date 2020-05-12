@@ -1,9 +1,13 @@
-# wtf-gulp-starter
+# Małgorzata Siłkowska Personal Website
 
-`npm install -g gulp-cli`
+My personal website built during WTF course ✌
 
-`npm install`
+## Tools & technologies I've used
 
-`gulp`
+- Visual Studio Code
+- SASS
+- Fetch API
+- CSS Grid
+- CSS Flexbox
 
-To publish your page using github pages use `npm run deploy`
+# built with wtf-gulp-starter
