@@ -21,10 +21,12 @@ fetch("https://api.github.com/users/gorzauka/repos?sort=updated")
   .then(resp => {
     const repos = resp;
     for (const repo of repos) {
-      const { description, html_url, name } = repo;
+      const { description, html_url, name, homepage } = repo;
       reposList.innerHTML += `
-      <li class="projects-content__item">
-      <a class="projects-content__link" href='${repo.html_url}'>${repo.name}
+      <li class="projects-content__list-item">
+      <a class="projects-content__list-link" href='${repo.html_url}'>${repo.name}
+      <p class="projects-content__list-description">${repo.description}</p>
+      <a class="projects-content__list-demo" href='${repo.homepage}' target=_blank rel= noopener>Demo</a>
     </li>`
     }
   })
