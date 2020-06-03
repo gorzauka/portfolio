@@ -402,11 +402,11 @@ template {
   line-height: 2.5rem;
   list-style-type: none; }
   .skills-details__list--green {
-    list-style-image: url(/assets/img/check-circle-green.svg); }
+    list-style-image: url(../assets/img/check-circle-green.svg); }
   .skills-details__list--purple {
-    list-style-image: url(/assets/img/check-circle-purple.svg); }
+    list-style-image: url(../assets/img/check-circle-purple.svg); }
   .skills-details__list--blue {
-    list-style-image: url(/assets/img/check-circle-blue.svg); }
+    list-style-image: url(../assets/img/check-circle-blue.svg); }
 
 @media screen and (max-width: 780px) {
   .skills__header {
@@ -453,7 +453,7 @@ template {
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(auto, 300px);
     grid-gap: 1.5rem;
-    padding: 4rem 8rem 8rem;
+    padding: 4rem 6rem 8rem;
     position: relative; }
     .projects-content__list-item {
       text-decoration: none;
@@ -481,7 +481,7 @@ template {
       line-height: 2.25rem;
       color: #171F3F; }
       .projects-content__list-link::before {
-        content: url(/assets/img/github_icon_b.svg);
+        content: url(assets/img/github_icon_b.svg);
         position: absolute;
         left: 0;
         bottom: 2rem; }
@@ -502,7 +502,7 @@ template {
       font-size: 1.25rem;
       line-height: 2.25rem; }
       .projects-content__list-demo::before {
-        content: url(/assets/img/demo_icon.svg);
+        content: url(assets/img/demo_icon.svg);
         position: absolute;
         left: -28px;
         top: 3px;
